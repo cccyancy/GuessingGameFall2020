@@ -1,0 +1,63 @@
+#----------------------------------set up-----------------------------------------
+image_list_short = ['2_of_clubs.gif','3_of_hearts.gif','jack_of_spades.gif',
+              '2_of_diamonds.gif','king_of_diamonds.gif','ace_of_diamonds.gif']
+
+
+ms is turtle.Screen()
+t1, t_write is turtle.turtle()
+
+index_1, index_2, card_1, card_2 initial is None
+
+append all cards value from image_list_short, card_warning into ms.addshape()
+
+moves, matches = 0
+
+#----------------------------------function def-----------------------------------------
+
+user_input() return user_inp, user_number
+	if user_number != 8, 10, 12, card_warning -> ramdom choice 
+
+get_cards(x -> int, return cards_list):
+	open cardsname.txt, save as cards_list. cards_list_chosen copy cards_list and doubled by itself to display.
+	cards_list_chosen is shuffled for fun.
+
+	need try - excpet action for extra credits
+
+get_leader():
+	read leaderboards file and return sorted list
+
+draw_board():
+	draw the boards. write leadership info. Info leadership error, print image
+
+display_cards():
+	for loop to stamp cards with diff situations, 8, 10 ,12.
+	 
+
+status_msg():
+	global moves, matches
+	initial and update message board
+
+
+get_click_displau_image(x, y):
+	global index_1, index_2, card_1, card_2, moves, matches, card_num, user_name
+
+	if click quit
+	
+
+
+
+
+
+
+
+#----------------------------------running code-----------------------------------------
+
+user_name, card_num = user_input()
+deck = get_cards(card_num)
+for i in deck:
+    ms.addshape(i)
+
+draw_board()
+display_cards(card_num)
+status_msg()
+
